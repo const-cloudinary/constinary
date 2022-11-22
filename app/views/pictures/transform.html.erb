@@ -1,0 +1,8 @@
+<h1>Your Picture</h1>
+<p>
+  <%= @transformations %>
+  <%= @args_kwargs %>
+</p>
+  <p>
+    <%= ('<img src="data:image/jpg;base64,%s">' % Base64.encode64(@the_data)).html_safe %>
+  </p>

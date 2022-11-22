@@ -1,0 +1,6 @@
+<h1>Your Pictures</h1>
+<% @images.each do |image| %>
+  <p>
+  <%= image.split("/").last %>
+  </p>
+<% end %>

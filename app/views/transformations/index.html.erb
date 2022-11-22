@@ -1,0 +1,25 @@
+<h1>Named Transformations</h1>
+<style>
+    table, th, td {
+        border:1px solid black;
+    }
+</style>
+<table>
+  <tr>
+    <th>Name</th>
+    <th>String</th>
+  </tr>
+  <% @transformations.each do |t| %>
+    <tr>
+      <td>
+        <%= t.name %>
+      </td>
+      <td>
+        <%= t.tr_string %>
+      </td>
+    </tr>
+  <% end %>
+
+</table>
+<br>
+<%= link_to "New Transformation", "/transformations/new" %>
